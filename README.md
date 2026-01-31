@@ -34,11 +34,11 @@ This project demonstrates a **VLAN Hopping Attack** using the **Double Tagging**
      ```bash
      sudo ip link set dev eth0.10 up
      ```
-   ####Monitor Traffic (Terminal 1)
+   #### Monitor Traffic (Terminal 1)
    ```bash
    sudo tcpdump -i eth0 -n -e vlan
    ```
-   ###Generate Traffic (Terminal 2)
+   ### Generate Traffic (Terminal 2)
    ```bash
    ping -I eth0.10 -c 4 192.168.20.2 #check ip add correct
    ```
@@ -57,7 +57,7 @@ This project demonstrates a **VLAN Hopping Attack** using the **Double Tagging**
         netmask 255.255.255.0
         vlan-raw-device eth0
     ```
-##🛡️VLAN Hopping (Double Tagging) Attack
+## 🛡️VLAN Hopping (Double Tagging) Attack
   ```bash
   nano vlan_hop.py
   ```
@@ -97,7 +97,7 @@ This project demonstrates a **VLAN Hopping Attack** using the **Double Tagging**
   ```bash
   sudo tcpdump -i eth0 -n -e vlan
   ```
-##🥳close
+## 🥳close
   ctrl + c
   ```bash
   sudo killall python3
@@ -105,7 +105,7 @@ This project demonstrates a **VLAN Hopping Attack** using the **Double Tagging**
   sudo ip link delete eth0.10
   sudo rm *.pyc 2>/dev/null
   ```
-##contact
+## 👱contact
   If anyone going to project of vlan if i need help i am read to help with more advance.
   My whatapp number +918489806048
   first line "Vlan / need help" i can easily recognise
